@@ -25,7 +25,7 @@ module.exports = async function (context, req) {
         SELECT 
         test.position AS Position,
         catA.category AS OptionA,
-        catB.category AS OpcionB,
+        catB.category AS OptionB,
         catA.categoryDesc AS DescriptionA,
         catB.categoryDesc AS DescriptionB
         FROM test_occupationalValues AS test
