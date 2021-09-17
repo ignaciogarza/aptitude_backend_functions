@@ -30,7 +30,7 @@ module.exports = async function (context, req) {
         FROM test_occupationalInterest AS test
         INNER JOIN [dbo].[occupationalInterest_sections] AS sections
             ON sections.sectionNumber = test.section
-        WHERE test.agelevel = 0 AND test.visibility = 1
+        WHERE test.agelevel = 1 AND test.visibility = 1
         ORDER BY test.section ASC, test.[position] ASC;
         `;
         context.res = {
