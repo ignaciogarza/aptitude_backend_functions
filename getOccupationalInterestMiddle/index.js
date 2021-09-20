@@ -26,6 +26,7 @@ module.exports = async function (context, req) {
         test.position,
         test.question,
         sections.sectionName,
+        sections.section_description,
         test.section
         FROM test_occupationalInterest AS test
         INNER JOIN [dbo].[occupationalInterest_sections] AS sections

@@ -40,7 +40,7 @@ module.exports = async function (context, req) {
             ON test.section = sections.sectionNumber
         WHERE test.agelevel = 0 AND test.visibility = 1
         ORDER BY test.[position] ASC;
-        `;
+        `;        
         context.res = {
             status:200,
             body: result
